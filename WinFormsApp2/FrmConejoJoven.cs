@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WinFormsApp2
+{
+    public partial class FrmConejoJoven : Form
+    {
+        public FrmConejoJoven()
+        {
+            InitializeComponent();
+        }
+
+        private void FrmConejoJoven_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnRegresar_Click(object sender, EventArgs e)
+        {
+            FrmCrianzaNutricion frm = new FrmCrianzaNutricion();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void BtnNutricion_Click(object sender, EventArgs e)
+        {
+            FrmNutricionJoven frm = new FrmNutricionJoven();
+            frm.Show();
+            this.Hide();
+        }
+
+        
+    }
+}
