@@ -20,7 +20,7 @@ namespace WinFormsApp2
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            if (TxtUsuario.Text == "Admin" && TxtContrasena.Text == "1234")
+            if (TxtUsuario.Text == "Admin" && TxtContrasena.Text == "12345")
             {
                 Form2 frm2 = new Form2();
                 frm2.Show();
