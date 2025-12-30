@@ -42,16 +42,16 @@
             // panel1
             // 
             panel1.BackgroundImage = Properties.Resources._931c5cea6ad27e362cece6cdfcbd2b77;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(-13, -7);
             panel1.Name = "panel1";
-            panel1.Size = new Size(553, 752);
+            panel1.Size = new Size(855, 826);
             panel1.TabIndex = 0;
             // 
             // TxtUsuario
             // 
             TxtUsuario.BorderStyle = BorderStyle.None;
             TxtUsuario.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TxtUsuario.Location = new Point(671, 338);
+            TxtUsuario.Location = new Point(913, 369);
             TxtUsuario.Name = "TxtUsuario";
             TxtUsuario.Size = new Size(269, 25);
             TxtUsuario.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             TxtContrasena.BorderStyle = BorderStyle.None;
             TxtContrasena.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TxtContrasena.Location = new Point(671, 433);
+            TxtContrasena.Location = new Point(913, 474);
             TxtContrasena.Name = "TxtContrasena";
             TxtContrasena.Size = new Size(269, 25);
             TxtContrasena.TabIndex = 2;
@@ -70,7 +70,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Captura_de_pantalla_2025_12_16_215601;
-            pictureBox1.Location = new Point(671, 46);
+            pictureBox1.Location = new Point(913, 46);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(362, 192);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -81,7 +81,7 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox1.Location = new Point(671, 464);
+            checkBox1.Location = new Point(913, 505);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(100, 24);
             checkBox1.TabIndex = 4;
@@ -93,7 +93,7 @@
             // 
             BtnLogin.BackColor = Color.Pink;
             BtnLogin.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            BtnLogin.Location = new Point(737, 526);
+            BtnLogin.Location = new Point(942, 574);
             BtnLogin.Name = "BtnLogin";
             BtnLogin.Size = new Size(235, 116);
             BtnLogin.TabIndex = 5;
@@ -105,7 +105,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(671, 285);
+            label1.Location = new Point(913, 310);
             label1.Name = "label1";
             label1.Size = new Size(95, 23);
             label1.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(671, 391);
+            label2.Location = new Point(913, 427);
             label2.Name = "label2";
             label2.Size = new Size(144, 23);
             label2.TabIndex = 7;
@@ -125,6 +125,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.MistyRose;
             ClientSize = new Size(1448, 837);
             Controls.Add(label2);
@@ -137,6 +138,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

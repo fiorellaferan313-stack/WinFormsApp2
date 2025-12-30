@@ -17,7 +17,7 @@ namespace WinFormsApp2
             InitializeComponent();
         }
 
-    
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -37,10 +37,17 @@ namespace WinFormsApp2
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            FrmCrianzaNutricion frm = new FrmCrianzaNutricion();
+            FormCrianzaNutricion frm = new FormCrianzaNutricion();
             frm.Show();
             this.Hide();
         }
-    
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
+            this.Hide();
+
+        }
     }
 }

@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WinFormsApp2
 {
     public partial class FormCrianzaNutricion : Form
     {
+        // VARIABLES DE CLASE (COMPARTIDAS ENTRE BOTONES)
+        int edadMeses;
+        string etapa;
+        string nutricion;
+
         public FormCrianzaNutricion()
         {
             InitializeComponent();
@@ -20,8 +18,8 @@ namespace WinFormsApp2
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             if (cboRaza.SelectedIndex == -1 ||
-       cboSexo.SelectedIndex == -1 ||
-       txtPeso.Text == "")
+                cboSexo.SelectedIndex == -1 ||
+                txtPeso.Text == "")
             {
                 MessageBox.Show("Complete todos los campos");
                 return;
@@ -34,21 +32,19 @@ namespace WinFormsApp2
                 return;
             }
 
-            // 2. Obtener datos del formulario
+            // DATOS
             string raza = cboRaza.SelectedItem.ToString();
             string sexo = cboSexo.SelectedItem.ToString();
             DateTime fechaNacimiento = dtpNacimiento.Value;
 
-            // 3. CALCULAR edad en meses (AQUÍ SE CREA)
+            // CALCULAR EDAD EN MESES
             DateTime hoy = DateTime.Today;
-            int edadMeses = (hoy.Year - fechaNacimiento.Year) * 12 + (hoy.Month - fechaNacimiento.Month);
+            edadMeses = (hoy.Year - fechaNacimiento.Year) * 12 + (hoy.Month - fechaNacimiento.Month);
 
             if (fechaNacimiento.Day > hoy.Day)
                 edadMeses--;
 
-            // 4. Determinar etapa
-            string etapa;
-
+            // DETERMINAR ETAPA
             if (edadMeses <= 2)
                 etapa = "Bebé";
             else if (edadMeses <= 6)
@@ -56,12 +52,46 @@ namespace WinFormsApp2
             else
                 etapa = "Adulto";
 
-            // 5. Mostrar para comprobar (TEMPORAL)
-            MessageBox.Show(
+            // DETERMINAR NUTRICIÓN
+            if (etapa == "Bebé")
+                nutricion = "Leche materna y concentrado inicial";
+            else if (etapa == "Joven")
+                nutricion = "Dieta balanceada para crecimiento";
+            else
+                nutricion = "Dieta de mantenimiento";
+
+            // MOSTRAR RESUMEN EN EL LABEL
+            lblInfo.Text =
                 "Raza: " + raza +
                 "\nSexo: " + sexo +
                 "\nEdad: " + edadMeses + " meses" +
-                "\nEtapa: " + etapa);
+                "\nEtapa: " + etapa +
+                "\n\nCrianza: Control reproductivo" +
+                "\nNutrición: " + nutricion;
+        }
+
+        // BOTÓN VER PLAN (button1)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormPlanNutricion plan = new FormPlanNutricion(
+                cboRaza.SelectedItem.ToString(),
+                cboSexo.SelectedItem.ToString(),
+                edadMeses,
+                etapa,
+                nutricion
+            );
+
+            plan.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.Show();
+            this.Hide();
         }
     }
 }
+
+
+

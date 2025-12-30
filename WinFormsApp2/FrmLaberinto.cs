@@ -41,11 +41,6 @@ namespace WinFormsApp2
             Cursor.Position = PointToScreen(StartPoint);
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            FrmCrianzaNutricion frm = new FrmCrianzaNutricion();
-            frm.Show();
-            this.Hide();
-        }
+       
     }
 }

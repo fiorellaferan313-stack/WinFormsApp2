@@ -623,6 +623,16 @@ namespace WinFormsApp2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2025_12_30_153718_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Captura_de_pantalla_2025-12-30_153718-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChatGPT_Image_18_dic_2025__05_58_16_p_m_ {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image 18 dic 2025, 05_58_16 p.m.", resourceCulture);

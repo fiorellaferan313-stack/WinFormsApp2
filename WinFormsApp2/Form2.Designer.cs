@@ -34,21 +34,22 @@
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
-            BtnRegresar = new Button();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.White;
             pictureBox1.Image = Properties.Resources.Captura_de_pantalla_2025_12_18_165319;
-            pictureBox1.Location = new Point(639, 395);
+            pictureBox1.Location = new Point(723, 412);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(276, 214);
+            pictureBox1.Size = new Size(269, 214);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -57,7 +58,7 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = Properties.Resources.Captura_de_pantalla_2025_12_18_165328;
-            pictureBox2.Location = new Point(333, 395);
+            pictureBox2.Location = new Point(404, 412);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(280, 214);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -69,7 +70,7 @@
             // 
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = Properties.Resources.Captura_de_pantalla_2025_12_18_165309;
-            pictureBox3.Location = new Point(29, 395);
+            pictureBox3.Location = new Point(69, 412);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(289, 214);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -81,7 +82,7 @@
             // 
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = Properties.Resources.Captura_de_pantalla_2025_12_18_165415;
-            pictureBox4.Location = new Point(933, 399);
+            pictureBox4.Location = new Point(1034, 412);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(273, 210);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -92,32 +93,34 @@
             // 
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.Image = Properties.Resources.ChatGPT_Image_18_dic_2025__05_58_16_p_m_;
-            pictureBox5.Location = new Point(333, 2);
+            pictureBox5.Location = new Point(446, 12);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(565, 351);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 4;
             pictureBox5.TabStop = false;
             // 
-            // BtnRegresar
+            // pictureBox6
             // 
-            BtnRegresar.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            BtnRegresar.Location = new Point(29, 32);
-            BtnRegresar.Name = "BtnRegresar";
-            BtnRegresar.Size = new Size(149, 29);
-            BtnRegresar.TabIndex = 5;
-            BtnRegresar.Text = "REGRESAR";
-            BtnRegresar.UseVisualStyleBackColor = true;
-            BtnRegresar.Click += BtnRegresar_Click;
+            pictureBox6.BackColor = Color.Transparent;
+            pictureBox6.Image = Properties.Resources.Captura_de_pantalla_2025_12_30_153718_removebg_preview;
+            pictureBox6.Location = new Point(24, 28);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(77, 67);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 15;
+            pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.FromArgb(255, 255, 192);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1448, 837);
-            Controls.Add(BtnRegresar);
+            Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
@@ -125,6 +128,7 @@
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -132,6 +136,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 
@@ -142,6 +147,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
-        private Button BtnRegresar;
+        private PictureBox pictureBox6;
     }
 }
