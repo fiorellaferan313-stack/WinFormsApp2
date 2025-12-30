@@ -126,7 +126,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1149, 750);
+            ClientSize = new Size(1448, 837);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(BtnLogin);

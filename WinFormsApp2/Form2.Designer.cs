@@ -116,7 +116,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 192);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1233, 712);
+            ClientSize = new Size(1448, 837);
             Controls.Add(BtnRegresar);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);

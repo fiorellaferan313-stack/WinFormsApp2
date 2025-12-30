@@ -133,6 +133,26 @@ namespace WinFormsApp2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _51ca41bc1535ed29ceda7be20bd2365f {
+            get {
+                object obj = ResourceManager.GetObject("51ca41bc1535ed29ceda7be20bd2365f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _51ca41bc1535ed29ceda7be20bd2365f1 {
+            get {
+                object obj = ResourceManager.GetObject("51ca41bc1535ed29ceda7be20bd2365f1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5fd968c2be4a5c96d3c003809ccfdf5d {
             get {
                 object obj = ResourceManager.GetObject("5fd968c2be4a5c96d3c003809ccfdf5d", resourceCulture);
@@ -326,6 +346,26 @@ namespace WinFormsApp2.Properties {
         internal static System.Drawing.Bitmap Captura_de_pantalla_2025_12_18_194253 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2025-12-18 194253", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2025_12_18_1942531 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2025-12-18 1942531", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2025_12_18_1942532 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2025-12-18 1942532", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -626,6 +666,16 @@ namespace WinFormsApp2.Properties {
         internal static System.Drawing.Bitmap ChatGPT_Image_20_dic_2025__07_44_14_p_m_ {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image 20 dic 2025, 07_44_14 p.m.", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap conejo_sin_fondo {
+            get {
+                object obj = ResourceManager.GetObject("conejo_sin_fondo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
